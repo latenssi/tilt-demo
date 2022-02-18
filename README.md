@@ -20,6 +20,9 @@ go install sigs.k8s.io/kind@v0.11.1
 # Install ctlptl
 go install github.com/tilt-dev/ctlptl/cmd/ctlptl@latest
 
+# Install Tilt
+curl -fsSL https://raw.githubusercontent.com/tilt-dev/tilt/master/scripts/install.sh | bash
+
 # Create a cluster and a local image repository
 ctlptl create cluster kind --registry=ctlptl-registry
 
